@@ -1,7 +1,7 @@
 {% set prefix = "spacy-model-" %}
 {% set lang = "it" %}
 {% set name = lang + "_core_news" %}
-{% set version = "2.0.0" %}
+{% set version = "2.2.5" %}
 
 package:
   name: {{ prefix }}{{ lang|lower }}
@@ -10,7 +10,7 @@ package:
 source:
   - folder: sm
     url: https://github.com/explosion/spacy-models/releases/download/{{ name }}_sm-{{ version }}/{{ name }}_sm-{{ version }}.tar.gz
-    sha256: 5fe98a480f94dee8c2a44d0510f58a4b2993160865c1d1c77ab1a6805b46463b
+    sha256: fd829f6e657e220d37c926a6fa1199d2b3c35dff910975bb3076168dc0e8230b
 
 build:
   noarch: python
