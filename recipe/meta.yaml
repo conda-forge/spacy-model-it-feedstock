@@ -11,6 +11,12 @@ source:
   - folder: sm
     url: https://github.com/explosion/spacy-models/releases/download/{{ name }}_sm-{{ version }}/{{ name }}_sm-{{ version }}.tar.gz
     sha256: 69cebf1c42f808b230f3cb9d0d120d0a9d48accb806544b1fcef1510e048c536
+  - folder: md
+    url: https://github.com/explosion/spacy-models/releases/download/{{ name }}_md-{{ version }}/{{ name }}_md-{{ version }}.tar.gz
+    sha256: c3e9d21487c58189a684e86d00ac5f547208e47adf1bb06fe9a266230c1c7cfe
+  - folder: lg
+    url: https://github.com/explosion/spacy-models/releases/download/{{ name }}_lg-{{ version }}/{{ name }}_lg-{{ version }}.tar.gz
+    sha256: 7b6e682694f18f0249bfdb1cc1d9a736da9262c1373135a10adec4b793238822
 
 build:
   noarch: python
@@ -49,6 +55,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - FernandezMathieu
     - JIVJGFJZKF
     - JennaLipscomb
     - mxr-conda
