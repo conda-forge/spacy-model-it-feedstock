@@ -1,7 +1,7 @@
 {% set prefix = "spacy-model-" %}
 {% set lang = "it" %}
 {% set name = lang + "_core_news" %}
-{% set version = "3.1.0" %}
+{% set version = "3.2.0" %}
 
 package:
   name: {{ prefix }}{{ lang|lower }}
@@ -10,13 +10,13 @@ package:
 source:
   - folder: sm
     url: https://github.com/explosion/spacy-models/releases/download/{{ name }}_sm-{{ version }}/{{ name }}_sm-{{ version }}.tar.gz
-    sha256: 69cebf1c42f808b230f3cb9d0d120d0a9d48accb806544b1fcef1510e048c536
+    sha256: a7f3ea3aff27273f55fb8fc6600c9864913b2aaca056c6a06a591cdd60972181
   - folder: md
     url: https://github.com/explosion/spacy-models/releases/download/{{ name }}_md-{{ version }}/{{ name }}_md-{{ version }}.tar.gz
-    sha256: c3e9d21487c58189a684e86d00ac5f547208e47adf1bb06fe9a266230c1c7cfe
+    sha256: 520ef8313e93d263a3ff925f12f23115851ce0df287934a550778da658ea121b
   - folder: lg
     url: https://github.com/explosion/spacy-models/releases/download/{{ name }}_lg-{{ version }}/{{ name }}_lg-{{ version }}.tar.gz
-    sha256: 7b6e682694f18f0249bfdb1cc1d9a736da9262c1373135a10adec4b793238822
+    sha256: f51a1d57338f31eb84573eed9d858e45b80caec5bb5ed6b6bde92476eafba1a3
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ test:
     - echo "make lint happy"
 
 outputs:
-  - name: {{prefix}}{{ name }}_{{ size }}
+  - name: {{ prefix }}{{ name }}_{{ size }}
     script: build.sh  # [unix]
     script: build.bat  # [win]
     requirements:
@@ -49,7 +49,7 @@ outputs:
 about:
   home: https://spacy.io
   license: CC BY-SA 4.0
-  summary: 'Italian multi-task CNN trained on the Universal Dependencies and WikiNER corpus.'
+  summary: Italian multi-task CNN trained on the Universal Dependencies and WikiNER corpus.
   license_file: LICENSE
   doc_url: https://spacy.io/models/it
 
