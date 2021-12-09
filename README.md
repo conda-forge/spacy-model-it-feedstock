@@ -16,7 +16,7 @@ Current build status
 
 
 <table>
-    
+
   <tr>
     <td>Azure</td>
     <td>
@@ -63,6 +63,8 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-spacy--model--it_core_news_sm-green.svg)](https://anaconda.org/conda-forge/spacy-model-it_core_news_sm) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/spacy-model-it_core_news_sm.svg)](https://anaconda.org/conda-forge/spacy-model-it_core_news_sm) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/spacy-model-it_core_news_sm.svg)](https://anaconda.org/conda-forge/spacy-model-it_core_news_sm) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/spacy-model-it_core_news_sm.svg)](https://anaconda.org/conda-forge/spacy-model-it_core_news_sm) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-spacy--model--it_core_news_md-green.svg)](https://anaconda.org/conda-forge/spacy-model-it_core_news_md) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/spacy-model-it_core_news_md.svg)](https://anaconda.org/conda-forge/spacy-model-it_core_news_md) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/spacy-model-it_core_news_md.svg)](https://anaconda.org/conda-forge/spacy-model-it_core_news_md) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/spacy-model-it_core_news_md.svg)](https://anaconda.org/conda-forge/spacy-model-it_core_news_md) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-spacy--model--it_core_news_lg-green.svg)](https://anaconda.org/conda-forge/spacy-model-it_core_news_lg) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/spacy-model-it_core_news_lg.svg)](https://anaconda.org/conda-forge/spacy-model-it_core_news_lg) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/spacy-model-it_core_news_lg.svg)](https://anaconda.org/conda-forge/spacy-model-it_core_news_lg) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/spacy-model-it_core_news_lg.svg)](https://anaconda.org/conda-forge/spacy-model-it_core_news_lg) |
 
 Installing spacy-model-it
 =========================
@@ -74,10 +76,10 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `spacy-model-it_core_news_sm` can be installed with:
+Once the `conda-forge` channel has been enabled, `spacy-model-it_core_news_sm`, `spacy-model-it_core_news_md` and `spacy-model-it_core_news_lg` can be installed with:
 
 ```
-conda install spacy-model-it_core_news_sm
+conda install spacy-model-it_core_news_sm spacy-model-it_core_news_md spacy-model-it_core_news_lg
 ```
 
 It is possible to list all of the versions of `spacy-model-it_core_news_sm` available on your platform with:
@@ -153,4 +155,3 @@ Feedstock Maintainers
 * [@JIVJGFJZKF](https://github.com/JIVJGFJZKF/)
 * [@JennaLipscomb](https://github.com/JennaLipscomb/)
 * [@mxr-conda](https://github.com/mxr-conda/)
-
