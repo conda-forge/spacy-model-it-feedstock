@@ -19,7 +19,6 @@ source:
     sha256: 7b6e682694f18f0249bfdb1cc1d9a736da9262c1373135a10adec4b793238822
 
 build:
-  noarch: python
   number: 0
 
 test:
@@ -27,7 +26,7 @@ test:
     - echo "make lint happy"
 
 outputs:
-  - name: {{prefix}}{{ name }}_{{ size }}
+  - name: {{ prefix }}{{ name }}_{{ size }}
     script: build.sh  # [unix]
     script: build.bat  # [win]
     requirements:
@@ -48,7 +47,7 @@ outputs:
 
 about:
   home: https://spacy.io
-  license: CC BY-SA 4.0
+  license: CC-BY-SA-4.0
   summary: 'Italian multi-task CNN trained on the Universal Dependencies and WikiNER corpus.'
   license_file: LICENSE
   doc_url: https://spacy.io/models/it
