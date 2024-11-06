@@ -1,7 +1,7 @@
 {% set prefix = "spacy-model-" %}
 {% set lang = "it" %}
 {% set name = lang + "_core_news" %}
-{% set version = "3.1.0" %}
+{% set version = "3.6.0" %}
 
 package:
   name: {{ prefix }}{{ lang|lower }}
@@ -10,16 +10,16 @@ package:
 source:
   - folder: sm
     url: https://github.com/explosion/spacy-models/releases/download/{{ name }}_sm-{{ version }}/{{ name }}_sm-{{ version }}.tar.gz
-    sha256: 69cebf1c42f808b230f3cb9d0d120d0a9d48accb806544b1fcef1510e048c536
+    sha256: 5e5dd41e56ae059488b44b759222f6bc8537297de2d47c55f56a10642b094b10
   - folder: md
     url: https://github.com/explosion/spacy-models/releases/download/{{ name }}_md-{{ version }}/{{ name }}_md-{{ version }}.tar.gz
-    sha256: c3e9d21487c58189a684e86d00ac5f547208e47adf1bb06fe9a266230c1c7cfe
+    sha256: 170aab8d1fb875ff9f650e42475ac63e8359707e72dbb7d3e2dcdbe1e838c607
   - folder: lg
     url: https://github.com/explosion/spacy-models/releases/download/{{ name }}_lg-{{ version }}/{{ name }}_lg-{{ version }}.tar.gz
-    sha256: 7b6e682694f18f0249bfdb1cc1d9a736da9262c1373135a10adec4b793238822
+    sha256: 8029a0f891776a9c0566fa9a076a9381ac07eba63a11e280dea0ec711ea0ae00
 
 build:
-  number: 1
+  number: 0
 
 test:
   commands:
